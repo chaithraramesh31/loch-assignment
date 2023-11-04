@@ -6,7 +6,7 @@ function Signup() {
     <div className={styles.signupContainer}>
         <form className={styles.signupBox}>
             <h3>Sign up for exclusive access.</h3>
-            <input type='email' placeholder='Your email address'/>
+            <input type='email' placeholder='Your email address' required/>
             <input type='submit' value='Get started' />
             <p>You’ll receive an email with an invite link to join.</p>
         </form>

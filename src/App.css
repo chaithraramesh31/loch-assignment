@@ -10,5 +10,5 @@
 .left-container {
     width: calc(100vw - 640px);
     height: 100%;
-    padding: 80px 0px 50px 50px;
+    padding: 60px 0px 50px 0px;
 }

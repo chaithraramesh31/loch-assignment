@@ -8,8 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* z-index: -1; */
-    /* box-shadow: -10px 0px 50px rgba(0,0,0); */
+    box-shadow: 0px 14px 64px -4px #18274B1F, 0px 8px 22px -6px #18274B1F;
 }
 .signupBox {
     width: 365px;
@@ -52,6 +51,7 @@
     line-height: 19.2px;
     border: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 .signupBox p {
     font-size: 16px;
