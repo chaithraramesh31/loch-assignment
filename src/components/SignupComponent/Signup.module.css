@@ -59,6 +59,10 @@
     border-radius: 8px;
     cursor: pointer;
 }
+.errorMessage {
+    color: red;
+    /* display: none; */
+}
 .signupBox p {
     font-size: 1em; /* 16px */
     font-weight: 600;
