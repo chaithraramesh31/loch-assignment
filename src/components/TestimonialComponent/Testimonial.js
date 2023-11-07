@@ -4,12 +4,12 @@ import vector from '../../images/Vector.png';
 
 function Testimonial() {
   return (
-    <div>
+    <div className={styles.testimonialContainer}>
         <div className={styles.heading}>
             <h5>Testimonials</h5>
             <div className={styles.line}></div>
         </div>
-        <div className={styles.testimonialContainer}>
+        <div className={styles.testimonialListContainer}>
             <img src={vector} alt='vector'/>
             <div className={styles.testimonialList}>
                 <div className={styles.testimonial}>

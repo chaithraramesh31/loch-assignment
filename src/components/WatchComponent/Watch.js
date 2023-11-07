@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Watch.module.css';
-import cohort from '../../images/Cohorts.png';
+import cohort from '../../images/Cohorts.svg';
 import eye from '../../images/Eye.png';
 
 function Watch() {
