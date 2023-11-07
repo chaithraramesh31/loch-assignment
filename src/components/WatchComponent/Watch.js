@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Watch.module.css';
-import cohort from '../../images/Cohorts.svg';
+import cohort from '../../images/Cohort.png';
 import eye from '../../images/Eye.png';
 
 function Watch() {
   return (
     <div className={styles.watchContainer}>
-        <img src={cohort} alt='cohort'/>
+        <div className={styles.cohortImg}><img src={cohort} alt='cohort'/></div>
         <div className={styles.watchContent}>
             <img src={eye} alt='eye'/>
             <h4>Watch what the whales are doing</h4>

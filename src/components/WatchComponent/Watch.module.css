@@ -1,73 +1,67 @@
 .watchContainer {
     display: flex;
     color: #F2F2F2;
-    height: calc(100vh / 3);
-    max-height: calc(100vh / 3);
-    justify-content: space-between;
+    padding: 30px 50px;
+    gap: 50px;
 }
-/* .watchContainer > img {
+.cohortImg {
+    min-width: 335px;
+    min-height: 306px;
+    max-width: 335px;
+    max-height: 306px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.cohortImg img {
     width: 100%;
     height: 100%;
-} */
+}
 .watchContent {
-    min-width: 45%;
-    max-width: 45%;
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: flex-end;
     text-align: right;
-    padding: 3.5em 3.5em 1em 0em;
+    padding: 15px;
 }
 .watchContent img {
-    width: 2em;
+    width: 32px;
+    height: 32px;
 }
 .watchContent h4{
-    font-size: 1.9375em; /* 31px */
+    font-size: 31px;
     font-weight: 500;
-    line-height: 1.2em;
+    line-height: 37.2px;
 }
 .watchContent p {
-    font-size: 1em; /* 16px */
+    font-size: 16px;
     font-weight: 200;
-    line-height: 1.2em;
+    line-height: 19.2px;
 }
 
-
-@media (max-width: 912px) {
+@media (max-width: 1280px) {
     .watchContainer {
         flex-direction: column-reverse;
-        height: unset;
-        max-height: unset;
         align-items: center;
-        padding: 5em 5em 0 5em;
-    }
-    .watchContainer > img {
-        width: 60%;
-        height: 60%;
+        padding: 0px 40px;
+        gap: 20px;
     }
     .watchContent {
-        max-width: 100%;
-        align-items: flex-start;
-        text-align: left;
-        padding: 0em;
+        align-items: center;
+        padding: 0px;
+        text-align: center;
     }
 }
 
-@media (max-width:610px) {
+@media (max-width: 540px) {
+    .cohortImg {
+        min-width: 100%;
+        min-height: 100%;
+    }
+}
+
+@media (max-width: 400px) {
     .watchContainer {
-        align-items: flex-start;
-        padding: 5em 2em 0 2em;
-    }
-    .watchContainer > img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media screen and (width: 1024px) and (height: 1366px) {
-    .watchContainer > img {
-        width: 60%;
-        height: 60%;
+        padding: 10px;
     }
 }

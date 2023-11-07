@@ -1,8 +1,5 @@
 .signupContainer {
-    /* position: absolute;
-    top: 0;
-    right: 0; */
-    width: 44.445%;
+    width: 640px;
     height: 100%;
     background-color: #fff;
     display: flex;
@@ -11,10 +8,8 @@
     box-shadow: 0px 14px 64px -4px #18274B1F, 0px 8px 22px -6px #18274B1F;
 }
 .signupBox {
-    /* width: 365px;
-    height: 347px; */
-    width: 57.033%;
-    height: 33.887%;
+    width: 365px;
+    height: 347px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,16 +18,14 @@
 .signupBox h3 {
     display: inline-block;
     color: #B0B1B3;
-    font-size: 2.4375em; /* 39px */
+    font-size: 39px;
     font-weight: 500;
-    line-height: 1.25em; /*46.8px*/
-    padding: 0 10px; /* 10px */
+    line-height: 46.8px;
+    padding: 0 10px;
 }
 .signupBox input[type='email'] {
-    /* width: 340px;
-    height: 59px; */
-    width: 93.154%;
-    height: 17.005%;
+    width: 340px;
+    height: 59px;
     outline: none;
     border: 1px solid #E5E5E6;
     border-radius: 8px;
@@ -41,54 +34,62 @@
 }
 .signupBox input::placeholder {
     color: #CACBCC;
-    font-size: 1em; /* 16px */
+    font-size: 16px;
     font-weight: 500;
-    line-height: 19.2px; /* 19.2px */
+    line-height: 19.2px;
 }
 .signupBox input[type='submit'] {
-    /* width: 340px;
-    height: 59px; */
-    width: 93.154%;
-    height: 17.005%;
+    width: 340px;
+    height: 59px;
     color: #fff;
     background: #19191A;
-    font-size: 1em; /* 16px */
+    font-size: 16px;
     font-weight: 600;
-    line-height: 19.2px; /* 19.2px */
+    line-height: 19.2px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
 }
 .errorMessage {
     color: red;
-    /* display: none; */
 }
 .signupBox p {
-    font-size: 1em; /* 16px */
+    font-size: 16px;
     font-weight: 600;
-    line-height: 19.2px; /* 19.2px */
+    line-height: 19.2px;
+    text-align: center;
 }
 
-@media (max-width: 912px) {
+@media (max-width: 1280px) {
     .signupContainer {
         width: 100%;
-        padding: 5em;
+        min-height: 60vh;
+        padding: 20px;
     }
     .signupBox {
-        width: 365px;
-        /* height: 347px; */
+        width: 100%;
+        height: 100%;
         justify-content: unset;
-        gap: 2em;
+        justify-content: center;
+        gap: 15px;
     }
-    .signupBox input[type='email'] {
-        height: 50px;
-    }
-    .signupBox input[type='submit'] {
-        height: 50px;
+    .signupBox h3 {
+        text-align: center;
     }
 }
-@media (max-width:610px) {
+
+@media (max-width: 400px) {
     .signupContainer {
-        padding: 2em;
+        padding: 10px;
+    }
+    .signupBox h3 {
+        font-size: 32px;
+        line-height: 37.2px;
+    }
+    .signupBox input[type='email'] {
+        width: 100%;
+    }
+    .signupBox input[type='submit'] {
+        width: 100%;
     }
 }

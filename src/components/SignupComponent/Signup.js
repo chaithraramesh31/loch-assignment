@@ -7,7 +7,6 @@ function Signup() {
   const [errorMessage, setErrorMessage] = useState('');
   const emailValidation = () => {
     const regEx = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    // const error = document.getElementById('errorMessage');
     if(email === '') {
       setErrorMessage('Please fill out this field');
     } else if(regEx.test(email)) {
@@ -15,7 +14,6 @@ function Signup() {
       window.open(url, '_blank');
     } else if(!regEx.test(email) ) {
       setErrorMessage('Please enter a valid email');
-      // error.style.display = "block";
     }
   }
 
